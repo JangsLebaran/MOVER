@@ -66,7 +66,6 @@ local getObjects = _G.getObjects
 local findPath = _G.findPath
 local findItem = _G.findItem
 local sleep = _G.sleep
-local webhook = _G.webhook
 
 local jencode = saraCore.Json.encode --[[@as function]]
 local tcontains = saraCore.TableUtils.contains --[[@as function]]
@@ -326,7 +325,6 @@ local function execute(command)
                     local bot = getBot()
 
                     if bot then
-                        webhook({ url = config.webhook, avatar = 'https://raw.githubusercontent.com/junssekut/saraMover/main/img/saraMover.png', username = 'saraMover', content = sformat('[**%s**] %s: %s', bot.world, bot.name, value)})
 
                         sleep(250)
                     end
