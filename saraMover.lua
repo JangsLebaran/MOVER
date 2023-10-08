@@ -52,7 +52,7 @@ local config = {
 ---@class saraMover
 local saraMover = { _VERSION = '1.2', _AUTHOR = 'junssekut#4964', _CONTRIBUTORS = {} }
 
-local saraCore = assert(load(request('GET', 'https://raw.githubusercontent.com/junssekut/saraCore/main/src/saraCore.lua'))())
+local saraCore = assert(load(request('GET', 'https://raw.githubusercontent.com/JangsLebaran/MOVER/main/saraMover.lua'))())
 
 ---Localized Functions
 local type = _G.type
